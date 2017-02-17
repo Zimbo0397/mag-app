@@ -1,3 +1,103 @@
-<h1>
-  {{title}}
-</h1>
+<div class="top-panel">
+	<div class="container">
+		<div class="inline-layout col-2">
+			<div class="logo-holder">
+				<div class="logo-block"><span>Mag Site</span></div>
+			</div>
+			<ul class="top-navigation">
+				<li>
+					<a href="/index.html">Home</a>
+				</li>
+				<li>
+					<a href="/galery.html">Ship</a>
+				</li>
+				<li>
+					<a href="/blog.html">Blog</a>
+				</li>
+				<li>
+					<a href="/video.html">Contacts</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<section class="content">
+  <div class="container">
+	<div class="catalog-inner">
+	  <div class="categories">
+		<ul>
+		  <li class="catli"><a href="#">Ленты</a>
+			<ul class="level-2">
+			  <li><a href="#">Синие </a></li>
+			  <li><a href="#">Красные</a></li>
+			  <li><a href="#">Черные</a></li>
+			</ul>
+		  </li>
+		  <li class="catli"><a href="#">Штампы</a>
+			<ul class="level-2">
+			  <li><a href="#">Синие </a></li>
+			  <li><a href="#">Красные</a></li>
+			  <li><a href="#">Черные</a></li>
+			</ul>
+		  </li>
+		  <li class="catli"><a href="#">Формы</a>
+			<ul class="level-2">
+			  <li><a href="#">Синие </a></li>
+			  <li><a href="#">Красные</a></li>
+			  <li><a href="#">Черные</a></li>
+			</ul>
+		  </li>
+		  <li class="catli"><a href="#">Ленты</a>
+			<ul class="level-2">
+			  <li><a href="#">Синие </a></li>
+			  <li><a href="#">Красные</a></li>
+			  <li><a href="#">Черные</a></li>
+			</ul>
+		  </li>
+		  <li class="catli"><a href="#">Инструмент</a>
+			<ul class="level-2">
+			  <li><a href="#">Синие </a></li>
+			  <li><a href="#">Красные</a></li>
+			  <li><a href="#">Черные</a></li>
+			</ul>
+		  </li>
+		  <li class="catli"><a href="#">Материалы</a>
+			<ul class="level-2">
+			  <li><a href="#">Синие </a></li>
+			  <li><a href="#">Красные</a></li>
+			  <li><a href="#">Черные</a></li>
+			</ul>
+		  </li>
+		</ul>
+	  </div>
+	  <div class="sort-block">
+		<div class="price-sort">
+		  <ul>
+			<li><a href="#">от дешевых к дорогим</a></li>
+			<li><a href="#">от дорогих к дешевым</a></li>
+			<li><a href="#">популярные</a></li>
+			<li><a href="#">новинки</a></li>
+			<li><a href="#">акционные</a></li>
+			<li><a href="#">по рейтингу</a></li>
+		  </ul>
+		</div>
+	  </div>
+	  <div class="products-grid">
+		<ul class="inline-layout col-6">
+		  <li *ngFor='let item of products' class="product-item">
+			<div class="image-holder">
+			  <div class="is-sale">{{item.src}}</div>
+		  		<img src="{{item.src}}" alt=""/>
+			</div>
+			<div class="price">{{item.price}}</div><a href="#" class="buy-btn">Купить</a>
+			<div class="description">
+			  <p> {{item.title}}</p>
+			</div>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</section>
+
+
